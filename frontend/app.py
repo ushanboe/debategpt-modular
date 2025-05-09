@@ -59,7 +59,8 @@ except:
 
 selected_model = st.sidebar.selectbox("Choose a model:", options=models)
 custom_model = st.sidebar.text_input("Or enter custom model:", value=selected_model)
-model = custom_model.strip()
+model = (custom_model or "").strip()
+
 
 style_choice = st.sidebar.radio("Tone", list(response_styles.keys()), index=0)
 length_map = {"Short": 150, "Medium": 300, "Long": 600}
