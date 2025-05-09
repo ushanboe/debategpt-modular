@@ -62,6 +62,7 @@ custom_model = st.sidebar.text_input("Or enter custom model:", value=selected_mo
 model = (custom_model or "").strip()
 
 
+
 style_choice = st.sidebar.radio("Tone", list(response_styles.keys()), index=0)
 length_map = {"Short": 150, "Medium": 300, "Long": 600}
 response_length = st.sidebar.radio("Response Length", list(length_map.keys()), index=1)
