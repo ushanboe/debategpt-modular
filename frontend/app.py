@@ -3,7 +3,8 @@ import requests
 import time
 from datetime import datetime
 
-API_BASE = "http://localhost:8000"
+API_BASE = "https://debategpt-backend.onrender.com"
+
 
 # -------------------------------
 # STATE INIT
